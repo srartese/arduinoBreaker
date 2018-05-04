@@ -40,8 +40,8 @@ void setup() {
 
 void draw() {
   background(255);
+   myPaddle.update();
   
-  myPaddle.update();
   for (int i=0; i < bricks.length; i++) {
     if (bricks[i] != null) {
       bricks[i].draw();
